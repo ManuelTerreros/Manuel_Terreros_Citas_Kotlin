@@ -72,13 +72,7 @@ class AppointmentService {
         )
     }
 
-    fun deleteAppointment(id: Long): String{
-        try {
+    fun deleteAppointment(id: Long): Unit{
             var delete = appointmentRepository.deleteAppointmentByById(id)
-            return "Doctor removed"
-        }catch (ex: DataAccessException){
-            return "Doctor removed"
-        }
-
     }
 }

@@ -30,8 +30,11 @@ class AppointmentController {
         @PathVariable("id") id: Long
     ): CreateAppointmentResponse = appointmentService.updateAppointment(id)
 
-    @DeleteMapping
+  /*
+     @DeleteMapping
     fun deleteAppointment(
         @PathVariable("id") id: Long
     ): String = appointmentService.deleteAppointment(id)
+   */
+
 }
